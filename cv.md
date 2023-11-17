@@ -51,5 +51,5 @@ There is no experience in the field of frontend development.
 - JavaScript Tutorial (https://learn.javascript.ru/)
 
 ## __Languages__
-Russian - Native
-English - A2
+- Russian - Native
+- English - A2
