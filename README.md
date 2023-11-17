@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Reria.github.io/rsschool-cv/
