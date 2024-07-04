@@ -5,120 +5,207 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="resume, frontend, skills">
-        <meta name="description content='Resume Margarita Dovgiallo'">
+        <meta name="description" content='Resume Margarita Dovgiallo'>
         <title>Resume</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <header>
+        <header >
             <nav class="header-nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#contacts"
                             class="nav-link">Contacts</a></li>
                     <li class="nav-item"><a href="#about-me"
                             class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#education"
+                            class="nav-link">Education</a></li>
                     <li class="nav-item"><a href="#skills"
                             class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#language"
+                            class="nav-link">Languages</a></li>
                     <li class="nav-item"><a href="#code-example"
                             class="nav-link">Code example</a></li>
                     <li class="nav-item"><a href="#projects"
                             class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#education"
-                            class="nav-link">Education</a></li>
-                    <li class="nav-item"><a href="#language"
-                            class="nav-link">Languages</a></li>
+
                 </ul>
             </nav>
         </header>
+
         <main>
             <section class="main-info">
-                <div class="container">
-                    <h1>Margarita Dovgiallo</h1>
-                    <img src alt="Photo Margarita Dovgiallo">
-                    <p> frontend developer | lawyer</p>
+                <h1>Margarita Dovgiallo</h1>
+                <div class="flex-container">
+
+                    <div class="description">
+
+                        <section id="about-me" class="about-me">
+                            <h2>About me</h2>
+                            <p>I am a lawyer by education. For several years I
+                                worked as a
+                                legal adviser at a large system-forming
+                                industrial
+                                enterprise in St. Petersburg.
+                                I am currently studying to become a frontend
+                                developer,
+                                because I want to do creative tasks more. The
+                                experience of
+                                law has strengthened my communication skills,
+                                teamwork
+                                skills, taught me to understand the specifics of
+                                the
+                                activities and document flow of companies, as
+                                well as to
+                                approach the details carefully</p>
+                        </section>
+
+                        <section id="education" class="education">
+                            <h2>Education</h2>
+                            <ul class="education-list">
+                                <li class="education-item">Bachelor of Law
+                                    Degree from Saint
+                                    Petersburg State University, 2019</li>
+                                <li class="education-item">Master of the
+                                    National Research
+                                    Institute “Higher School of Economics” in
+                                    Law and Public
+                                    Administration, 2021</li>
+                                <li
+                                    class="education-item"><span>Courses:</span></li>
+                                <li class="education-item">FreeCodeCamp
+                                    (<a
+                                        href="https://www.freecodecamp.org">https://www.freecodecamp.org</a>)</li>
+                                <li class="education-item">HTML Academy
+                                    (<a
+                                        href="https://www.htmlacademy.ru">https://www.htmlacademy.ru</a>)</li>
+                                <li class="education-item">A textbook on
+                                    programming by
+                                    Dmitry Trepachev (<a
+                                        href="https://code.mu/ru/">https://code.mu/ru/</a>)</li>
+                                <li class="education-item">JavaScript Tutorial
+                                    (<a
+                                        href="https://learn.javascript.ru/">https://learn.javascript.ru/</a>)</li>
+                                <li class="education-item">RS School Stage 1 (not completed)
+                                    (<a
+                                        href="https://rs.school/courses/javascript">https://rs.school/courses/javascript/</a>)</li>
+                            </ul>
+                        </section>
+                        <section id="skills" class="skills">
+                            <h2>Skills</h2>
+                            <ul class="skill-list">
+                                <li class="skill-item">HTML</li>
+                                <li class="skill-item">CSS</li>
+                                <li class="skill-item">JavaScript</li>
+                                <li class="skill-item">Git</li>
+                                <li class="skill-item">Figma</li>
+                                <li class="skill-item">TypeScript</li>
+                            </ul>
+                        </section>
+                        <section id="language" class="language">
+                            <h2>Language</h2>
+                            <ul class="language-list">
+                                <li class="language-item">Russian - Native</li>
+                                <li class="language-item">English - A2</li>
+                            </ul>
+                        </section>
+
+                        <section id="code-example" class="code-example">
+                            <h2>Code example</h2>
+                            <p>Task from Leetcode: <span> 167. Two Sum II -
+                                    Input Array
+                                    Is Sorted:</span></p>
+                            <p class="condition">Given a 1-indexed array of integers
+                                <code>numbers</code> that
+                                is already sorted in non-decreasing order, find
+                                two numbers such that they add up to a specific
+                                <code>target</code> number. Let these two
+                                numbers be
+                                <code>[index1]</code> and
+                                <code>numbers[index2]</code> where <code> 1 &lt;=
+                                    index1 &lt; index2 &lt;= numbers.length.</code>
+
+                                Return the indices of the two numbers,
+                                <code>index1</code>
+                                and <code>index2</code>, added by one as an
+                                integer array
+                                <code>[index1, index2]</code> of length 2.
+
+                                The tests are generated such that there is
+                                exactly one solution. You may not use the same
+                                element twice.
+
+                                Your solution must use only constant extra
+                                space.
+                            </p>
+                            <br>
+                            <pre><code>
+    function twoSumSortArray(nums, target) { 
+      let lower = 0;
+      let upper = nums.length - 1;
+                                  
+      while (upper > lower) {
+      let sum = nums[lower] + nums[upper];
+        if (sum &lt; target) {
+          lower += 1;
+        } else if (sum > target) {
+          upper -= 1;
+        } else {
+          return [lower + 1, upper + 1]
+        }
+      }
+    }
+                                </code>
+                            </pre>
+                        </section>
+
+                        <section id="projects" class="projects">
+                            <h2>Projects</h2>
+                            <p>I have no work experience, but I have several
+                                training projects. Last year I participated in
+                                RS School Stage 1 and did several tasks:</p>
+                            <ul class="project-list">
+                                <li class="project-item"><a
+                                        href="https://rolling-scopes-school.github.io/reria-JSFE2023Q4/Coffe-House.Week1/index.html">Coffe
+                                        house Resourse </a></li>
+                                <li class="project-item"><a
+                                        href="https://rolling-scopes-school.github.io/reria-JSFE2023Q4/Hangman/">Game
+                                        Hangman</a></li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div id="contacts" class="contacts">
+
+                        <div class="container">
+                            <img src="./14.jpg" alt="Photo Margarita Dovgiallo">
+                            <p class="details"> frontend developer | lawyer</p>
+                        </div>
+                        <h2>Contacts</h2>
+                        <ul class="contacts-list">
+                            <li class="contact-item"><span>Location: </span>
+                                Saint
+                                Petersburg, Russia</li>
+                            <li class="contact-item"><span>Phone: </span><a
+                                    href="tel:+79533675383">
+                                    +7-(953)-367-53-83 </a></li>
+                            <li class="contact-item"><span>Email: </span>
+                                <a href="mailto:">margaridiv@mail.ru</a></li>
+                            <li class="contact-item"><span>GitHub: </span> <a href="https://github.com/Reria">https://github.com/Reria</a>
+                                </li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div id="contacts" class="contacts">
-                    <h2>Contacts</h2>
-                    <ul class="contacts-list">
-                        <li class="contact-item"><span>Location: </span> Saint
-                            Petersburg, Russia</li>
-                        <li class="contact-item"><span>Phone: </span>
-                            +7-(953)-367-53-83 </li>
-                        <li class="contact-item"><span>Email: </span>
-                            margaridiv@mail.ru</li>
-                        <li class="contact-item"><span>GitHub:
-                            </span>https://github.com/Reria</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="about-me">
-                <h2>About me</h2>
-                <p>I am a lawyer by education. For several years I worked as a
-                    legal adviser at a large system-forming industrial
-                    enterprise in St. Petersburg.
-                    I am currently studying to become a frontend developer,
-                    because I want to do creative tasks more. The experience of
-                    law has strengthened my communication skills, teamwork
-                    skills, taught me to understand the specifics of the
-                    activities and document flow of companies, as well as to
-                    approach the details carefully</p>
-            </section>
-
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul class="skill-list">
-                    <li class="skill-item">HTML</li>
-                    <li class="skill-item">CSS</li>
-                    <li class="skill-item">JavaScript</li>
-                    <li class="skill-item">Git</li>
-                    <li class="skill-item">Figma</li>
-                    <li class="skill-item">TypeScript</li>
-                </ul>
-            </section>
-
-            <section id="code-example">
-                <h2>Code example</h2>
-                <code></code>
-            </section>
-
-            <section id="projects">
-                <h2>Projects</h2>
-
-            </section>
-            <section id="education">
-                <h2>Education</h2>
-                <ul class="education-list">
-                    <li class="education-item">Bachelor of Law Degree from Saint
-                        Petersburg State University, 2019</li>
-                    <li class="education-item">Master of the National Research
-                        Institute “Higher School of Economics” in Law and Public
-                        Administration, 2021</li>
-                    <li class="education-item"><span>Courses:</span></li>
-                    <li class="education-item">FreeCodeCamp
-                        (https://www.freecodecamp.org)</li>
-                    <li class="education-item">HTML Academy
-                        (https://www.htmlacademy.ru)</li>
-                    <li class="education-item">A textbook on programming by
-                        Dmitry Trepachev (https://code.mu/ru/)</li>
-                    <li class="education-item">JavaScript Tutorial
-                        (https://learn.javascript.ru/)</li>
-                </ul>
-            </section>
-            <section id="language">
-                <h2>Language</h2>
-                <ul class="language-list">
-                    <li class="language-item">Russian - Native</li>
-                    <li class="language-item">English - A2</li>
-                </ul>
             </section>
         </main>
         <footer>
             <ul class="course-link-list">
-                <li class="link-list-item">GitHub link</li>
-                <li class="link-list-item"> 2024</li>
-                <li class="link-list-item">Logo</li>
+                <li class="link-list-item"><a href="https://rs.school/courses/javascript-preschool-ru"><img class="rs-logo" src="./RS.svg"
+                    alt="Logo RS School"></a></li>
+                <li class="link-list-item"> 2024 &amp;copy </li>
+                <li class="link-list-item"><a
+                        href="https://github.com/Reria"><img class="git-href"
+                            src="./Github-desktop-logo-symbol.svg"
+                            alt="Logo Github logo"> </a> </li>
             </ul>
         </footer>
     </body>
