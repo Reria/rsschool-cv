@@ -1,0 +1,209 @@
+
+ /* background-color: #123C69;  #EDC7B7 */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    a {
+        outline: none;
+        text-decoration: none;
+        a::hover {
+            cursor: pointer;
+        }
+    }
+
+    ul {list-style: none;}
+}
+
+body {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #EEE2DC;
+    color:#123C69;
+    font-size: 18px;
+}
+
+header, footer{
+    background-color:#123C69;
+    border-radius: 5px;
+}
+
+main {
+    border-left: 5px solid #123C69;
+}
+
+.nav-list {
+    margin: 5px 0px 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    border: 1px solid #EDC7B7;
+    border-radius: 10px;
+    padding: 12px 8px;
+    background-color: #EDC7B7;
+    font-size: 18px;
+    margin: 10px 0px 10px;
+}
+
+.nav-item > a {
+    padding: 10px;
+    color: #123C69;
+
+}
+
+.nav-item > a:hover {
+    color: #AC3B61;
+}
+
+.nav-item > a:visited {
+    color: whitesmoke;
+}
+
+.education-item::before {
+    content:  "-";
+    position: relative;
+    left:-5px;
+}
+
+.education-item > a{
+    color: #123C69;
+}
+
+.education-item > a:hover {
+    color: #AC3B61;
+}
+
+.education-item > a:visited {
+    color: skyblue;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 35px;
+    color:  #AC3B61 ;
+    padding: 15px 0 5px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.contact-item > a {
+    color: #123C69;
+}
+
+.contact-item > a:hover {
+    color: #AC3B61;
+}
+
+img {
+    max-width: 300px;
+    max-height: 350px;
+    border-radius: 5px;
+    border: 1px solid #EEE2DC;
+    border-left: 5px solid #123C69;
+}
+
+.description {
+    width: 70%;
+}
+.about-me, .skills, .education, .language, .code-example, .projects  {
+    border: 1px solid #123C69;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    
+}
+
+h2 {
+    color:  #AC3B61;
+    padding: 5px;
+}
+
+.details {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+
+.contacts > h2 {
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+.contacts-list{
+    border-left: 5px solid #123C69;
+}
+
+.contact-item {
+    padding: 2px;
+    margin-left: 2px;
+}
+
+
+.skill-list {
+    display: flex;
+    gap: 20px;
+}
+
+.skill-item{
+    padding: 5px;
+}
+
+.language-item {
+    padding: 2px 5px 0px;
+}
+
+.course-link-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 40px 40px;
+}
+
+
+.condition {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    color: #EDC7B7;
+    font-weight: bold;
+}
+
+.project-item {
+    list-style-type: square;
+    padding: 2px;
+    margin-left: 15px;
+}
+
+.project-item > a{
+    color: #123C69;
+}
+
+.project-item > a:hover {
+    color: #AC3B61;
+}
+
+.project-item> a:visited {
+    color: skyblue;
+}
+
+
+.rs-logo, .git-href {
+    padding: 5px;
+    width: 50px;
+    border: #123C69;
+} 
