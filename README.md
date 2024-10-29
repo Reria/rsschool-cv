@@ -1,2 +1,2 @@
 https://Reria.github.io/rsschool-cv/cv
-https://Reria.github.io/rsschool-cv/fi
+https://Reria.github.io/rsschool-cv/
